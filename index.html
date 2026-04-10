@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Votre Nom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <h1 class="logo">VotreNom</h1>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="badge">Développeur Front-end</p>
+      <h2>Je crée des interfaces web simples et efficaces.</h2>
+      <p>
+        Bienvenue sur mon portfolio. Vous pouvez découvrir mes projets, mon parcours
+        et me contacter rapidement.
+      </p>
+      <a class="btn" href="#projets">Voir mes projets</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="apropos" class="section container">
+      <h3>À propos</h3>
+      <p>
+        Je suis passionné par le développement web. J’aime transformer les idées en
+        sites rapides, accessibles et agréables à utiliser.
+      </p>
+    </section>
+
+    <section id="projets" class="section container">
+      <h3>Projets</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Landing Page Produit</h4>
+          <p>Page de présentation responsive avec un design moderne.</p>
+          <a href="#">Voir le projet</a>
+        </article>
+        <article class="card">
+          <h4>To-Do App</h4>
+          <p>Application JavaScript pour organiser les tâches quotidiennes.</p>
+          <a href="#">Voir le projet</a>
+        </article>
+        <article class="card">
+          <h4>Mini Blog</h4>
+          <p>Blog statique avec structure claire et style épuré.</p>
+          <a href="#">Voir le projet</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <label>
+          Nom
+          <input type="text" name="nom" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Envoyer</button>
+        <p id="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> VotreNom — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
